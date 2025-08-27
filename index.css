@@ -1,0 +1,200 @@
+/* imported a font from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans';
+}
+
+body{
+    width: 99vw;
+    min-height: 99vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./resources/bg-cafe.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% 200px;
+    background-color: #1B1D1F;
+}
+
+.container{
+    width: 90%;
+    min-height: 100%;
+    background-color: #111315;
+    border-radius: 15px;
+    padding: 2.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text{
+    width: 80%;
+    min-height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url(./resources/vector.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 60% 0;
+}
+
+.title{
+    color: #FEF7EE;
+    font-size: 32px;
+    text-align: center;
+}
+
+.halfTitle{
+    font-size: 16px;
+    color: #6F757C;
+    text-align: center;
+    margin-top: 10px;
+    width: 38%;
+}
+
+.buttons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.buttons button{
+    margin: 0 20px;
+    height: 40px;
+    width: 100px;
+    font-size: 14px;
+    color: #FEF7EE;
+    font-weight: 500;
+}
+
+.allProducts-button{
+    background-color: #4D5562;
+    border-radius: 5px;
+    border: none;
+    transition: color 0.3s,
+                background-color 0.3s,
+                border 0.3s;
+}
+
+.allProducts-button:hover{
+    color: #FEF7EE;
+    background-color: #111315;
+    border: 1px solid #FEF7EE;
+    cursor: pointer;
+}
+
+.available-button{
+    border: none;
+    background-color: rgba(0,0,0,0.01);
+    color: #FEF7EE;
+    transition: color 0.3s;
+}
+
+.available-button:hover{
+    color: #6F757C;
+    cursor: pointer;
+}
+
+.list{
+    width: 80%;
+    min-height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.coffee{
+    width: 325px;
+    min-height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 30px; 
+    margin: 5px 0;   
+}
+
+.image{
+    width: 100%;
+    height: 70%;
+    align-self: center;
+    border-radius: 15px;
+}
+
+.nameAndPrice{
+    width: 100%;
+    height: 12.5%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name{
+    color: #FEF7EE;
+    font-size: 16px;
+}
+
+.price{
+    font-size: 12px;
+    color: #1B1D1F;
+    background-color: #BEE3CC;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.starAndPoint{
+    width: 100%;
+    height: 12.5%;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.star{
+    height: 100%;
+    min-width: 10px;
+    margin-right: 5px;
+}
+
+.point{
+    color: #FEF7EE;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.soldOut{
+    color: #ED735D;
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+}
+
+@media (max-width: 1400px){
+    .halfTitle{
+        width: 50%;         /*increasing the width of the halftitle */
+    }
+
+    .coffee{
+        margin: 10px 0;         /*seperating each coffee for smaller screens*/
+    }
+}
+
+@media (max-width: 900px){
+    .halfTitle{
+        width: 70%;         /*increasing the width of the halftitle for even smaller screens*/
+    }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A landing page about coffee product with rating, price and name and availibility of the products">
+    <title> Simple Coffee Listing </title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container">
+        <!-- text section with title, halftitle and buttons -->
+        <div class="text">
+            <h1 class="title"> Our Collection </h1>
+            <h2 class="halfTitle"> Introducing our Coffee Collection, a selection of unique coffees from different roast types and origins, expertly roasted in small batches and shipped fresh weekly. </h2>
+            <div class="buttons">
+                <button class="allProducts-button"> All Products </button>
+                <button class="available-button"> Available Now </button>
+            </div>
+        </div>
+        <!-- list of the coffee's section -->
+        <div class="list">
+            <div class="coffee cappuccino">
+                <img src="./Images/Cappuccino.jpeg" alt="Cappuccino" class="image">
+                <div class="nameAndPrice">
+                    <h4 class="name"> Cappuccino </h4>
+                    <h5 class="price"> $5.20 </h5>
+                </div>
+                <div class="starAndPoint">
+                    <img src="./Images/Star_fill.svg" alt="Yellow Star" class="star">
+                    <p class="point"> 4.7 <span style="color: #6F757C; margin-left: 4px;">(65 Votes)</span> </p>
+                    <p class="soldOut"></p>
+                </div>
+            </div>
+            <div class="coffee houseCoffee">
+                <img src="./Images/House Coffee.avif" alt="House Coffee" class="image">
+                <div class="nameAndPrice">
+                    <h4 class="name"> House Coffee </h4>
+                    <h5 class="price"> $3.50 </h5>
+                </div>
+                <div class="starAndPoint">
+                    <img src="./Images/Star_fill.svg" alt="Yellow Star" class="star">
+                    <p class="point"> 4.85 <span style="color: #6F757C; margin-left: 4px;">(14 Votes)</span> </p>
+                    <p class="soldOut"></p>
+                </div>
+            </div>
+            <div class="coffee espresso">
+                <img src="./Images/Espresso.webp" alt="Espresso" class="image">
+                <div class="nameAndPrice">
+                    <h4 class="name"> Espresso </h4>
+                    <h5 class="price"> $2.50 </h5>
+                </div>
+                <div class="starAndPoint">
+                    <img src="./Images/Star_fill.svg" alt="Yellow Star" class="star">
+                    <p class="point"> 4.9 <span style="color: #6F757C; margin-left: 4px;">(55 Votes)</span> </p>
+                    <p class="soldOut"></p>
+                </div>
+            </div>
+            <div class="coffee coffeeLatte">
+                <img src="./Images/Coffee Latte.jpg" alt="Coffee Latte" class="image">
+                <div class="nameAndPrice">
+                    <h4 class="name"> Coffee Latte </h4>
+                    <h5 class="price"> $4.50 </h5>
+                </div>
+                <div class="starAndPoint">
+                    <img src="./Images/Star_fill.svg" alt="Yellow Star" class="star">
+                    <p class="point"> 5 <span style="color: #6F757C; margin-left: 4px;">(23 Votes)</span> </p>
+                    <p class="soldOut"></p>
+                </div>
+            </div>
+            <div class="coffee chocolateCoffee">
+                <img src="./Images/Chocolate Coffee.jpg" alt="Chocolate Coffee" class="image">
+                <div class="nameAndPrice">
+                    <h4 class="name"> Chocolate Coffee </h4>
+                    <h5 class="price"> $4.00 </h5>
+                </div>
+                <div class="starAndPoint">
+                    <img src="./Images/Star_fill.svg" alt="Yellow Star" class="star">
+                    <p class="point"> 4.65 <span style="color: #6F757C; margin-left: 4px;">(122 Votes)</span> </p>
+                    <p class="soldOut"></p>
+                </div>
+            </div>
+            <!-- this coffee is SOLD OUT  -->
+            <div class="coffee valentineSpecial">
+                <img src="./Images/Valentine Special.jpg" alt="Valentine Special coffee" class="image">
+                <div class="nameAndPrice">
+                    <h4 class="name"> Valentine Special </h4>
+                    <h5 class="price"> $5.50 </h5>
+                </div>
+                <div class="starAndPoint">
+                    <img src="./Images/Star.svg" alt="Empty Star" class="star">
+                    <p class="point"> <span style="color: #6F757C; margin-left: 4px;">No Ratings</span> </p>
+                    <p class="soldOut"> Sold out </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- connecting to the index.js (javascript file) -->
+    <script src="./index.js"></script>
+</body>
+</html>
